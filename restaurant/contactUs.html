@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Burger World</title>
+    </head>
+    <body>
+        <h1>Burger World</h1>
+        <hr/>
+        <form action="#" method="POST">
+            <div>        
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="contactUs.html">Contact Us</a>
+            </div>
+            <hr/>
+            <div>
+                <label id="NameLabel" for="Name">Name: </label>
+                <input id="Name" name="Name" type="text"/>
+            </div>
+            <div>
+                <label id="EmailLabel" for="Email">Email: </label>
+                <input id="Email" name="Email" type="text">
+            </div>
+            <div>
+                <label id="PhoneLabel" for="Phone">Phone: </label>
+                <input id="Phone" name="Phone" type="text">
+            </div>
+            <div>
+                <label id="ReasonLabel" for="Reason">Reason for Inquiry</label>
+                <select>
+                    <option value="Catering" selected>Catering</option>
+                    <option value="PrivateParty">Private Party</option>
+                    <option value="Feedback">Feedback</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div>
+                <label id="AdditionalInformation" for="AdditionalInformation">Additional Information: </label>
+                <textarea id="AdditionalInformation" name="AdditionalInformation"></textarea>
+            </div>
+            <div>
+                <label id="RepeatLabel" for="Repeat">Have you been to the restaurant?</label>
+                <input name="repeat" type="radio" value="No" checked/>No
+                <input name="repeat" type="radio" value="Yes"/>Yes
+            </div>
+        </form>
+        <hr/>
+        <footer>
+            123 Main St, Lazytown, Texas, 78593<br/>
+            1-888-555-5462
+        </footer>
+        
+    </body>
+</html>
