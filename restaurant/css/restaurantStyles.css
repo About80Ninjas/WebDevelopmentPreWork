@@ -1,17 +1,15 @@
 
-#Footer,#Headder,#Logo,#Contact{
+#Footer,#Headder,#Logo,#Contact,#IndexContent.h3{
     text-align: center;
 }
-.MenuItem,#IndexContent{
-    text-align: center;
-    width: 300px;
-    overflow: hidden;
+#IndexContent{
+    text-align: justify;
+    width: 400px;
+    margin: auto;
     /*border: 1px solid black; */
     
 }
-#IndexContent{
-    margin: auto;
-}
+
 .MenuItem{
      display: inline-block;
      width: 33.3%

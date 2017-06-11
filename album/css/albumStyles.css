@@ -1,3 +1,13 @@
 body {
     text-align: center;
 }
+.BandMembers{
+    margin-left: auto;
+    margin-right: 45%;
+    font-style: italic;
+    
+}
+.MyFont{
+    font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
