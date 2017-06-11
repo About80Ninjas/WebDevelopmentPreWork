@@ -2,17 +2,25 @@
 #Footer,#Headder,#Logo,#Contact,#IndexContent.h3{
     text-align: center;
 }
-#IndexContent{
+#Footer,#Headder{
+    font-family: Courier New, Courier, monospace;
+}
+#Description{
     text-align: justify;
     width: 400px;
     margin: auto;
     /*border: 1px solid black; */
     
 }
-
+#IndexContent{
+    background: coral;
+}
 .MenuItem{
      display: inline-block;
      width: 33.3%
+}
+#Menu{
+    background: blueviolet;
 }
 
 /*
