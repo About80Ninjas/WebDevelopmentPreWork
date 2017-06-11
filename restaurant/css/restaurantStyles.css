@@ -1,0 +1,28 @@
+
+#Footer,#Headder,#Logo,#Contact{
+    text-align: center;
+}
+.MenuItem,#IndexContent{
+    text-align: center;
+    width: 300px;
+    overflow: hidden;
+    /*border: 1px solid black; */
+    
+}
+#IndexContent{
+    margin: auto;
+}
+.MenuItem{
+     display: inline-block;
+     width: 33.3%
+}
+
+/*
+#MenuItem1,#MenuItem3,#MenuItem5{
+    color: blue;
+    
+}
+#MenuItem2,#MenuItem4,#MenuItem6{
+    color: red;
+}
+*/
