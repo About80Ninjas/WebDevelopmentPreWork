@@ -13,16 +13,26 @@
     
 }
 #IndexContent{
-    background: coral;
+    background: #fce5e8;
 }
 .MenuItem{
      display: inline-block;
      width: 33.3%
 }
 #Menu{
-    background: blueviolet;
+    background: #d4e5f4;
 }
 
+a:visited{
+    color: #ed42c5;
+}
+a:hover{
+    color: orangered;
+    font-weight: bold;
+}
+a:link{
+    text-decoration: none;
+}
 /*
 #MenuItem1,#MenuItem3,#MenuItem5{
     color: blue;
