@@ -7,7 +7,41 @@ body {
     font-style: italic;
     
 }
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td{
+    background: greenyellow;
+}
 .MyFont{
     font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
+a:link, a:visited{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    background: orangered;
+}
+
+
+
+/*
+In this lab, you will revisit albumPage.html that you created in the v4 lab. You will apply what you have learned about styling tables and links.
+
+Check the updated HTML page and CSS file into your GitHub repository and then confirm completion at the bottom of this page.
+
+Requirements:
+
+1. Apply styles to the link to the band's site with the following desired effects:
+
+a. Links should only be underlined when you are hovering over a link. The other states should not be underlined.
+
+b. When hovering, set the background of the link to a different color.
+
+2. Italicize the track numbers, titles, and lengths.
+
+3. Set the table background to a color of your choice.
+*/
