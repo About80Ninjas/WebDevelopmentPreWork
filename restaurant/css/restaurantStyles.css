@@ -1,31 +1,21 @@
 
-#Footer,#Headder,#Logo,#Contact,#IndexContent.h3{
+body{
+    font-family: 'Tangerine', serif;
     text-align: center;
 }
-#Footer,#Headder{
-    font-family: Courier New, Courier, monospace;
-}
-#Description{
-    text-align: justify;
-    width: 400px;
-    margin: auto;
-    /*border: 1px solid black; */
-    
-}
 #BeverageTable{
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%;
+    text-align: justify;
+    margin: 0px auto;
     
+}
+h1,h2,h3{
+    font-weight: bold;
 }
 
 #IndexContent{
     background: #fce5e8;
 }
-.MenuItem{
-     display: inline-block;
-     width: 33.3%
-}
+
 #Menu{
     background: #fce5e8;
 }
@@ -41,14 +31,3 @@ a:link{
     text-decoration: none;
 }
 
-
-
-/*
-#MenuItem1,#MenuItem3,#MenuItem5{
-    color: blue;
-    
-}
-#MenuItem2,#MenuItem4,#MenuItem6{
-    color: red;
-}
-*/
