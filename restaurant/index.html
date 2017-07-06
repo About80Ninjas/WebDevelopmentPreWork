@@ -5,6 +5,9 @@
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
         <link rel="stylesheet" type="text/css" href="css/restaurantStyles.css">
+        <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <noscript>This site is best viewed with JavaScript enabled.</noscript>
 
     </head>
     <body id="Index">
@@ -21,9 +24,27 @@
         </div>
         <hr/>
         <div class="jumbotron">
-            <h2 class="display-3">New Location</h2>
-            <p>New location opening in Oilville Fall 2017!!</p>
-
+            <div id="jumbotronCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#jumbotronCarousel" data-slide-to"0" class="active"></li>
+                    <li data-target="#jumbotronCarousel" data-slide-to"1"></li>
+                    <li data-target="#jumbotronCarousel" data-slide-to"2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <h2 class="display-3">New Location</h2>
+                        <p>New location opening in Oilville Fall 2017!!</p>
+                    </div>
+                    <div class="item">
+                        <h2 class="display-3">New Seasonal Menu</h2>
+                        <p>New seasonal menu with specal options</p>
+                    </div>
+                    <div class="item">
+                        <h2 class="display-3">Drink of the Month</h2>
+                        <p>Drink of the Month is SG Special Brew</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="IndexContent" class="container">
             <div>
