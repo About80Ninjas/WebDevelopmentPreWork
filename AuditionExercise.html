@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+        <script>
+            function isPositiveInteger(s){
+                var pattern = /^\d+(.\d{1,2})?$/;
+                return pattern.test(s);
+            }
+            function validateForm() {
+                var startingNumber = document.forms["numberInput"]["startingNumber"].value;
+                var endingNumber = document.forms["numberInput"]["endingNumber"].value;
+                var step = document.forms["numberInput"]["step"].value;
+                
+                if ( startingNumber == "") {
+                    alert("Starting number must be enterd.");
+                    return false;
+                } else if(isNaN(startingNumber)){
+                    alert("Starting number must be a number.");
+                    return false;
+                }
+                if ( endingNumber == "") {
+                    alert("Ending number must be enterd.");
+                    return false;
+                }else if(isNaN(endingNumber)){
+                    alert("Ending number must be a number.");
+                    return false;
+                }
+                if(endingNumber >= startingNumber){
+                    alert("Starting number need to be bigger that ending number.");
+                    return false;
+                }
+                if ( step == "") {
+                    alert("Step must be enterd.");
+                    return false;
+                }else if(isNaN(startingNumber)){
+                    alert("Step must be a number.");
+                    return false;
+                }else if (isPositiveInteger(startingNumber)){
+                    alert("Step must be a positive number.");
+                    return false;
+                }
+
+                
+            }
+        </script>
+        <noscript>Sorry, your browser does not support JavaScript!</noscript>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+            crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
+            integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" 
+            crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+            crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container" id="app">
+            <h1>Number Thing</h1>
+            <form id="numberInput" action="#" onsubmit="return validateForm()" method="post">
+                <label for="startingNumber">Starting Number</label>
+                <input type="text" name="startingNumber"><br>
+                <label for="endingNumber">Ending Number</label>
+                <input type="text" name="endingNumber"><br>
+                <label for="step">Step</label>
+                <input type="text" name="step"><br>
+                <button type="submit">Display Events</button>
+            </form>
+        </div>
+        <div class="container" style="visibility: hidden" id="answers">
+            <p>Here are the even numbers between $startingNumber and $endingNumber by $step's.</p>
+            <ul class="list-group" id="answerList">
+                <li class="list-group-item">$answer</li>
+                <li class="list-group-item">$answer</li>
+                <li class="list-group-item">$answer</li>
+            </ul>
+        </div>
+    </body>
+</html>
